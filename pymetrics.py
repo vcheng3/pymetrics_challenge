@@ -47,11 +47,111 @@ print(sorted_sat)
 
 sorted_sat.to_csv('sorted_sat')
 
+
 eth1 = sorted_sat[sorted_sat['ethnicity'] == 1]
 print(eth1)
+
+print('-----------------------------------')
+
 print(eth1['total_score'].max())
 print(eth1['total_score'].min())
 print(eth1['total_score'].mean())
-print(eth1.loc[eth1['total_score'] == 750])
 
+print('-----------------------------------')
 
+eth2 = sorted_sat[sorted_sat['ethnicity'] == 2]
+print(eth2['total_score'].max())
+print(eth2['total_score'].min())
+print(eth2['total_score'].mean())
+
+print('-----------------------------------')
+
+eth3 = sorted_sat[sorted_sat['ethnicity'] == 3]
+print(eth3['total_score'].max())
+print(eth3['total_score'].min())
+print(eth3['total_score'].mean())
+
+print('-----------------------------------')
+
+eth4 = sorted_sat[sorted_sat['ethnicity'] == 4]
+print(eth4['total_score'].max())
+print(eth4['total_score'].min())
+print(eth4['total_score'].mean())
+
+print('-----------------------------------')
+
+eth5 = sorted_sat[sorted_sat['ethnicity'] == 5]
+print(eth5['total_score'].max())
+print(eth5['total_score'].min())
+print(eth5['total_score'].mean())
+
+print(eth1.count())
+print(eth2.count())
+print(eth3.count())
+print(eth4.count())
+print(eth5.count())
+
+print('-----------------------------------')
+
+#genders involved
+eth1_gen1 = eth1[eth1['gender'] == 1]
+eth1_gen2 = eth1[eth1['gender'] == 2]
+print(eth1_gen1['total_score'].mean())
+print(eth1_gen2['total_score'].mean())
+
+print('-----------------------------------')
+
+eth2_gen1 = eth2[eth2['gender'] == 1]
+eth2_gen2 = eth2[eth2['gender'] == 2]
+print(eth2_gen1['total_score'].mean())
+print(eth2_gen2['total_score'].mean())
+
+print('-----------------------------------')
+
+eth3_gen1 = eth3[eth3['gender'] == 1]
+eth3_gen2 = eth3[eth3['gender'] == 2]
+print(eth3_gen1['total_score'].mean())
+print(eth3_gen2['total_score'].mean())
+
+print('-----------------------------------')
+
+eth4_gen1 = eth4[eth4['gender'] == 1]
+eth4_gen2 = eth4[eth4['gender'] == 2]
+print(eth4_gen1['total_score'].mean())
+print(eth4_gen2['total_score'].mean())
+
+print('-----------------------------------')
+
+eth5_gen1 = eth5[eth5['gender'] == 1]
+eth5_gen2 = eth5[eth5['gender'] == 2]
+print(eth5_gen1['total_score'].mean())
+print(eth5_gen2['total_score'].mean())
+
+#describe the data
+
+print('-----------------------------------')
+
+print('DATA FOR ETH1')
+print(eth1.describe())
+
+print('-----------------------------------')
+
+print('DATA FOR ETH2')
+print(eth2.describe())
+
+print('-----------------------------------')
+
+print('DATA FOR ETH3')
+print(eth3.describe())
+
+print('-----------------------------------')
+
+print('DATA FOR ETH4')
+print(eth4.describe())
+
+print('-----------------------------------')
+
+print('DATA FOR ETH5')
+print(eth5.describe())
+
+print('-----------------------------------')
