@@ -5,7 +5,7 @@ The Pymetrics Data Analyst Challenge for SAT DATA.
 
 #### Q1)Explain why any data was altered or removed from analysis.
 
-#### Q2)Using the cleaned data from Prompt 3, give the descriptive statistics of SAT_TOT by user gender and ethnicity.
+#### Q2)Using the cleaned data, give the descriptive statistics of SAT_TOT by user gender and ethnicity.
 
 #### Q3)What trends or anomalies do you notice in this data?
 
